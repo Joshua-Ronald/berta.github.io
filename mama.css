@@ -1,0 +1,220 @@
+/* * {
+    outline: 1px solid #0f0;
+} */
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.space {
+    height: 30px;
+}
+
+header {
+    background-color: #202029;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-block: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+}
+
+.div-spacer {
+    height: 110px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 2px solid #000;
+}
+
+.logo {
+    padding-right: 180px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 0;
+}
+
+section {
+    font-size: 1.2em; /* Tamaño de fuente más grande para las secciones */
+    box-shadow: 0 0 5px 2px #000;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.sectionForm {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-top: 20px;
+    font-size: 1.2em; /* Tamaño de fuente más grande para el formulario */
+    text-align: center;
+    width: 100%;
+}
+
+textarea {
+    width: 95%;
+    padding: 20px;
+    border-radius: 13px;
+    resize: none;
+}
+
+button {
+    background-color: #b46f89;
+    color: #ffffff;
+    border-radius: 13px;
+    border: none;
+    padding: 15px 30px; /* Aumenta el tamaño del botón */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A25D77;
+}
+
+/* Reglas de estilo para tamaños de pantalla más pequeños (móviles y tabletas) */
+@media screen and (max-width: 768px) {
+    .div-spacer {
+        height: 180px;
+    }
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+    }
+
+    form {
+        font-size: 1.1em;
+    }
+
+    button {
+        padding: 12px 24px;
+    }
+}
+
+#contact {
+    background-color: #222231; /* Color de fondo light orange para la sección de contacto */
+}
+
+#contact h2, #contact p {
+    color: #fff;
+}
+
+#about {
+    position: relative;
+    color: #ffffff; /* Color de texto blanco */
+    padding: 50px; /* Ajusta el espacio interno según tu diseño */
+    text-align: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/personaescribiendo.jpg') center/cover no-repeat; /* Reemplaza 'background-image.jpg' con la ruta de tu imagen de fondo */
+    z-index: -1; /* Coloca la imagen detrás del contenido de la sección */
+}
+
+.background-image:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.background-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/photo-1559557809-e9b6eabeabfc.jpeg') center/cover no-repeat; /* Reemplaza 'background-image.jpg' con la ruta de tu imagen de fondo */
+    z-index: -1; /* Coloca la imagen detrás del contenido de la sección */
+}
+
+.background-image2:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.about-content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté delante de la imagen de fondo */
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-frame {
+    width: 100%;
+    height: 600px;
+    margin-block: 20px;
+}

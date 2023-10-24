@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mama.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="icon" href="images/526267b9-010a-43ef-8fe1-93d69c0cbcb4.jpeg">
+    <script src="mama.js" defer></script>
+    <title>Berta's writings</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/526267b9-010a-43ef-8fe1-93d69c0cbcb4.jpeg" alt="Logo Icon">
+        </div>
+        <div class="title">
+            <h1>Berta's writings</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="div-spacer" id="aboutme"></div>
+    <main>
+        <section id="about" class="sectionAbout">
+            <div class="background-image"></div>
+            <div class="about-content">
+                <h2 class="section-title"><u>About me</u></h2>
+                <div class="space"></div>
+                <div class="space"></div>
+                <p>I'm a 48 years old mother with a big love for writing. <br> I started reading since I was 3, and I instantly fell in love with it. </p>
+                <div class="space"></div>
+                <p>This love for writing made me want to help other people to express what they want, <br> in words.</p>
+                <div id="portfolio"></div>
+            </div>
+        </section>
+
+        <section id="about" class="sectionAbout2">
+            <div class="background-image2"></div>
+            <div class="about-content">
+                <h2 class="section-title"><u>My Portfolio</u></h2>
+                <div class="space"></div>
+                <div class="space"></div>
+
+                <div class="portfolio-items">
+                    <div class="portfolio-item">
+                        <iframe class="portfolio-frame" src="What are the best NFT (non-fungible token) marketplaces_.pdf"></iframe>
+                        <a href="What are the best NFT (non-fungible token) marketplaces_.pdf" target="_blank"><button>View</button></a>
+                    </div>
+                    <div class="portfolio-item">
+                        <iframe class="portfolio-frame" src="Investment guide for beginners.pdf"></iframe>
+                        <a href="Investment guide for beginners.pdf" target="_blank"><button>View</button></a>
+                    </div>
+                    <div class="portfolio-item">
+                        <iframe class="portfolio-frame" src="Best Marketing Tips for Landscaping Companies.pdf"></iframe>
+                        <a href="Best Marketing Tips for Landscaping Companies.pdf" target="_blank"><button>View</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sectionForm" id="contact">
+            <h2 class="section-title"><u>Contact Me!</u></h2>
+            <div class="space"></div>
+            <p style="text-align: center;">You can contact me directly to my business mail: <a href="mailto:bertacecilia40@gmail.com" style="color: #fff;">bertacecilia40@gmail.com</a><br>
+            Or write your message here and just send it!</p>
+            <div class="space"></div>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <textarea id="message" name="message" rows="8" cols="50" placeholder="Write your message!"></textarea>
+                    <button type="button" onclick="enviarMensaje()">Send</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
